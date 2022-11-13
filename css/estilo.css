@@ -1,0 +1,327 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+
+
+
+
+
+
+
+
+
+html,body{
+	height: 100%;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.gallery {
+  --n: 1; /* number of rows*/
+  --m: 5; /* number of columns */
+  --g: 0px;  /* control the gap */
+  --f: .8;   /* control the scale factor */
+  
+  display: grid;
+  gap: var(--g);
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: repeat(var(--m),auto);
+}
+
+.gallery  img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(80%);
+  transition: .35s linear;
+}
+
+.gallery img:hover{
+  filter: grayscale(0);
+  width:  calc(100vh*var(--f)/var(--n));
+  height: calc(100vw*var(--f)/var(--m));
+}
+
+
+
+
+.gallery-2 {
+  --n: 3; /* number of rows*/
+  --m: 5; /* number of columns */
+  --g: 10px;  /* control the gap */
+  --f: 1.2;   /* control the scale factor */
+  
+  display: grid;
+  gap: var(--g);
+  width: 100vw;
+  height: 2800vh;
+  grid-template-columns: repeat(var(--m),auto);
+  margin: 30px;
+  justify-items: center;
+ 
+}
+
+.gallery-2 > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(60%);
+  transition: .15s linear;
+}
+
+.gallery-2 img:hover{
+  filter: grayscale(0);
+ 
+}
+
+
+
+
+
+.gallery-1 {
+  --n: 3; /* number of rows*/
+  --m: 5; /* number of columns */
+  --g: 10px;  /* control the gap */
+  --f: 1.2;   /* control the scale factor */
+  
+  display: grid;
+  gap: var(--g);
+  width: 100vw;
+  height: 300vh;
+  grid-template-columns: repeat(var(--m),auto);
+  margin: 30px;
+  justify-items: center;
+ 
+}
+
+.gallery-1  img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(60%);
+  transition: .15s linear;
+}
+
+.gallery-1 img:hover{
+  filter: grayscale(0);
+ 
+}
+
+section.galeria-fotos-1 h1{
+  text-align: center;
+  color: yellow;
+}
+
+
+.center{
+	max-width: 1280px;
+	padding:0 2%;
+	margin:0 auto;
+}
+
+.w33{
+	width: 33.3%;
+	padding: 0 10px;
+}
+
+.w50{
+	padding:0 10px;
+	width: 50%;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+.img{
+	width: 100%;
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+
+header{
+  background-color:rgb(0, 0, 0);
+}
+
+header a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  
+}
+
+
+.menu{
+  
+  margin-top: 30px;
+}
+
+.logo{
+  height: 100px;
+  margin-top: 70px;
+  
+  
+}
+
+section.banner img{
+  opacity: 0.9;
+  
+}
+
+section.banner p{
+  color: rgb(248, 248, 248);
+}
+section.banner a{
+  color: yellow;
+}
+
+section.galeria-fotos h1{
+  text-align: center;
+  color: yellow;
+}
+
+section.email{
+
+  background-color: black;
+  
+}
+
+section.email h3{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+section.email button{
+  padding-right: 80px;
+  padding-left: 80px;
+  background-color: yellow;
+}
+
+
+section.footer {
+  background-color: rgb(0, 0, 0);
+ 
+	bottom: 0;
+	width: 100%;
+ 
+  
+}
+
+section.footer span{
+  color: yellow;
+}
+
+.text-muted{
+  
+}
+
+.bd-placeholder-img{
+  width: 100%;
+  height:100%;
+ 
+}
+
+
+
+
+
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* fim topo */
+
+  
+ 
+
+  
+
+  .card {
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: rgb(0, 0, 0);
+    border: 0 solid hsla(0,0%,7%,.125);
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    position: relative;
+  }
+  
+ 
+
+  /* fim imagem */
+
+
+
